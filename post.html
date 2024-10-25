@@ -93,14 +93,26 @@
         </p>
       </div>
     </div><!-- end columns -->
+    <!-- 畅言 -->
+    {% if ext_changyan_appid.length %}
+    <div id="SOHUCS" sid="{{ post.url }}"></div>
+    <script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+    <script type="text/javascript">
+      window.changyan.api.config({
+        appid: '{{ext_changyan_appid}}',
+        conf: '{{ext_changyan_conf}}'
+      });
+    </script>
+    {% /if %}
   </div><!-- end container -->
 
   <div class="toc-widget animate__animated animate__fadeInRight">
     <div id="toc-content"></div>
   </div>
+
 </section>
 <style>
-  .post-nav{
+  .post-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,6 +120,7 @@
     border-top: 1px dashed #eee;
     padding: 14px 0;
   }
+
   .toc-widget {
     overflow-y: auto;
     position: fixed;

@@ -61,6 +61,18 @@
       "exampleText":"disqus shortname"
    },
    {
+      "title":"changyan_appid",
+      "variableName":"changyan_appid",
+      "inputFieldHeight":22,
+      "exampleText":"changyan appid"
+   },
+   {
+      "title":"changyan_conf",
+      "variableName":"changyan_conf",
+      "inputFieldHeight":22,
+      "exampleText":"changyan conf"
+   },
+   {
       "title":"RSS",
       "variableName":"rss",
       "inputFieldHeight":22,
